@@ -38,7 +38,6 @@ class Core {
 		}
 
 		$final_context = $this->current_context->prepare();
-		var_dump( $final_context ); die();
 
 		Timber::$locations = get_template_directory . '/views';
 		Timber::render( $view_file . '.twig' , $final_context );
