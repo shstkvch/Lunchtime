@@ -1,0 +1,17 @@
+{
+    "name": "shstkvch/phoenix",
+    "description": "Phoenix is a WordPress plugin that provides a clean OOP model for rendering content.",
+    "license": "GPL2",
+    "authors": [
+        {
+            "name": "David Hewitson",
+            "email": "dwhewitson@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+      "psr-4": {
+        "Shstkvch\\Phoenix\\": "src/"
+      }
+    }
+}
