@@ -8,7 +8,7 @@ It's very early days right now, but my long-term plan is to build a clean, under
 
 The main idea is that everything should be opt-in, so you can use as much or little as you like, or integrate the framework into an existing traditional WP site.
 
-** Much of what's described below isn't working / isn't implemented yet **
+** EARLY PROTOTYPE! Much of what's described below isn't working / isn't implemented yet! **
 
 ## Implemented features
 - Routing system, based on WordPress' internal routing
@@ -149,6 +149,12 @@ $user = $model('user');
 $user = Users::where( 'has', $sandwich );
 
 ## Misc
+
+Magical parameters need explained better. Is this a bad idea from a technical standpoint?
+
+Would it be better just to use static classes?
+
+--
 
 Models have a getCurrent() method that will return the WP_Query'd object.
 
