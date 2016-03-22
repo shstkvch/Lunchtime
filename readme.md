@@ -144,9 +144,7 @@ function main ( $user, $sandwich ) {
 	$current_user->save();
 
 }
-$user = $model('user');
-
-$user = Users::where( 'has', $sandwich );
+```
 
 ## Misc
 
