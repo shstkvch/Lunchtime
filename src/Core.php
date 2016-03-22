@@ -1,8 +1,8 @@
 <?php
-namespace Shstkvch\Phoenix;
+namespace Shstkvch\Lunchtime;
 
-use Shstkvch\Phoenix\Helper as Helper;
-use Shstkvch\Phoenix\Context as Context;
+use Shstkvch\Lunchtime\Helper as Helper;
+use Shstkvch\Lunchtime\Context as Context;
 use Timber as Timber;
 use Exception as Exception;
 

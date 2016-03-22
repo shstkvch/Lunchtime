@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name: Phoenix - Helper Framework for WordPress
+ * Plugin Name: Lunchtime
  * Version: 0.1
- * Description: Phoenix is a WordPress plugin that provides a clean OOP model for rendering content.
+ * Description: A framework for developing WordPress with minimised sadness and doubt.
  * Author: David Hewitson
- * Text Domain: phoenix
+ * Text Domain: lunchtime
  * Domain Path: /languages
- * @package Phoenix
+ * @package lunchtime
  */
 
 require_once( 'vendor/autoload.php' );
 
-use Shstkvch\Phoenix\Core as Phoenix;
+use Shstkvch\Lunchtime\Core as Lunchtime;
 
-new Phoenix();
+new Lunchtime();

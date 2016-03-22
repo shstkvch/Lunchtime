@@ -1,9 +1,9 @@
 <?php
 /**
- * Main Phoenix context class
+ * Main Lunchtime context class
  */
 
-namespace Shstkvch\Phoenix;
+namespace Shstkvch\Lunchtime;
 
 use ArrayAccess, IteratorAggregate, ArrayIterator, Traversable;
 

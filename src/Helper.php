@@ -1,11 +1,11 @@
 <?php
 /**
- * Base helper class for Phoenix
+ * Base helper class for Lunchtime
  */
 
-namespace Shstkvch\Phoenix;
+namespace Shstkvch\Lunchtime;
 
-use Shstkvch\Phoenix\Context;
+use Shstkvch\Lunchtime\Context;
 
 class Helper {
 

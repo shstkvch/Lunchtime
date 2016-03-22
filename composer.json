@@ -1,6 +1,6 @@
 {
-    "name": "shstkvch/phoenix",
-    "description": "Phoenix is a WordPress plugin that provides a clean OOP model for rendering content.",
+    "name": "shstkvch/lunchtime",
+    "description": "Lunchtime is a WordPress plugin that provides a clean OOP model for rendering content.",
     "license": "GPL2",
     "authors": [
         {
@@ -11,7 +11,7 @@
     "require": {},
     "autoload": {
       "psr-4": {
-        "Shstkvch\\Phoenix\\": "src/"
+        "Shstkvch\\Lunchtime\\": "src/"
       }
     }
 }

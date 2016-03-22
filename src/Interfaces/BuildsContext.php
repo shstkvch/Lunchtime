@@ -3,9 +3,9 @@
  * Interface for objects which can build a renderable context
  */
 
-namespace Shstkvch\Phoenix\Interfaces;
+namespace Shstkvch\Lunchtime\Interfaces;
 
-use Shstkvch\Phoenix\Context;
+use Shstkvch\Lunchtime\Context;
 
 interface BuildsContext {
 
