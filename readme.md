@@ -61,10 +61,18 @@ class Home extends Controller  {
 	/**
 	 * Render the homepage
 	 */
-	public function main( $context, $user ) {
-		$context['content'] = [
-			'welcome' => $this->contextFromMethod( 'welcome' )
-		];
+	public function main( $context, $user, $page ) {
+		// simply use the $context object like an array
+		$context['key'] = 'something else';
+
+		// add a bunch of stuff at once by specifying a method to call (below)
+		$context->add( 'welcomeContext' );
+
+		// or add to the context by passing a key and a value
+		$context->add( 'key', 'value' );
+
+		// remove something from the context
+		$context->remove( 'key' );
 
 		if ( $user->getCurrent() ) {
 			$context['logged_in'] = 'You are logged in!';
@@ -72,15 +80,24 @@ class Home extends Controller  {
 			$context['logged_in'] 'You are not logged in!';
 		}
 
+		// return the name of the template you want to render
         return 'index';
+
+		// or return an object to redirect to its permalink
+		return $page::where( 'title', '%LIKE%', 'Example Page' )->findOne();
+
+		// or return an absolute URL to redirect to it
+		return 'http://google.com/something-else';
 	}
 
 	/**
-	 * Get the context for the welcome
+	 * Add the context for the welcome
 	 */
 	protected function welcomeContext( $context ) {
-		$context['title'] = get_field( 'title' );
-		$context['subtitle'] = get_field( 'subtitle' );
+		$context['welcome'] = [
+			'title' => get_field( 'title' ),
+			'subtitle' => get_field( 'subtitle' )
+		];
 	}
 
 }
