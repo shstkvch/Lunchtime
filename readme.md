@@ -154,6 +154,10 @@ Magical parameters need explained better. Is this a bad idea from a technical st
 
 Would it be better just to use static classes?
 
+Also, risk of conflicts. $post (HTTP) will clash with wp $post.
+
+Maybe just use $request for everything, a la Laravel?
+
 --
 
 Models have a getCurrent() method that will return the WP_Query'd object.
