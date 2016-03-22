@@ -78,7 +78,7 @@ class Home extends Controller  {
 	/**
 	 * Get the context for the welcome
 	 */
-	protected function introductionContext( $context ) {
+	protected function welcomeContext( $context ) {
 		$context['title'] = get_field( 'title' );
 		$context['subtitle'] = get_field( 'subtitle' );
 	}
